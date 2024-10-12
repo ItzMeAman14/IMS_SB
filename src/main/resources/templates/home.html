@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background-color: #007bff;
+            color: white;
+            padding: 50px 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .overview {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn-custom {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="hero">
+            <h1>Inventory Management System</h1>
+            <p class="lead">Manage your inventory with ease!</p>
+            <div class="mt-4">
+                <a class="btn btn-light btn-custom" th:href="@{/api/items}" role="button">View Items</a>
+                <a class="btn btn-success btn-custom" th:href="@{/api/items/new}" role="button">Add New Item</a>
+            </div>
+        </div>
+
+        <div class="mt-5 overview">
+            <h2>Overview</h2>
+            <p>This system allows you to view, add, update, and delete items in your inventory efficiently. Keep your inventory organized and up to date!</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
